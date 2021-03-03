@@ -1,0 +1,6 @@
+type ShoppingListItem @model @auth(rules: [{allow: owner}]) {
+  id: ID!
+  itemName: String!
+  approxCost: String
+  author: String
+}
